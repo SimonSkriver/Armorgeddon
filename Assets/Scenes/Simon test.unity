@@ -717,7 +717,6 @@ GameObject:
   - component: {fileID: 1382197093}
   - component: {fileID: 1382197092}
   - component: {fileID: 1382197091}
-  - component: {fileID: 1382197094}
   m_Layer: 6
   m_Name: Ground
   m_TagString: Ground
@@ -840,51 +839,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1382197094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382197090}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 161ab91d29149b245b66619b94bbea28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 10
---- !u!1 &1478612756
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1478612757}
-  m_Layer: 0
-  m_Name: MeteorHitCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1478612757
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478612756}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 2.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7190228091673782777}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1664920488
 GameObject:
@@ -1062,7 +1016,7 @@ GameObject:
   - component: {fileID: 1687148840}
   - component: {fileID: 1687148839}
   - component: {fileID: 1687148838}
-  - component: {fileID: 1687148837}
+  - component: {fileID: 1687148841}
   - component: {fileID: 1687148836}
   m_Layer: 7
   m_Name: Meteor
@@ -1098,19 +1052,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1687148837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687148835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06023ec19fd05514f9dcc3fd2275fa01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ui: {fileID: 532462905}
 --- !u!58 &1687148838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1211,12 +1152,27 @@ Transform:
   m_GameObject: {fileID: 1687148835}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.71, y: 1.45, z: 0}
+  m_LocalPosition: {x: -1.79, y: 3.63, z: 0}
   m_LocalScale: {x: 2.756, y: 2.756, z: 2.756}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687148841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687148835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25c5b5ad5f792f49bd4bd9ebf1069ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  hitForce: 100
+  ui: {fileID: 532462905}
 --- !u!1 &1890923763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4039088231831557726, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
+      propertyPath: meteorScript
+      value: 
+      objectReference: {fileID: 1687148841}
     - target: {fileID: 4630422688095405704, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.691
@@ -1560,48 +1520,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7792224684971250697, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4630422688095405704, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1478612757}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7792224684971250697, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 7190228091673782778}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
---- !u!1 &7190228091673782776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7792224684971250697, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
-  m_PrefabInstance: {fileID: 7190228091673782775}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7190228091673782777 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4630422688095405704, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
-  m_PrefabInstance: {fileID: 7190228091673782775}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7190228091673782778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7190228091673782776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ece0ed93f802ae4ea46c7d43dbb5c12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meteorCheck: {fileID: 1478612757}
-  Meteor:
-    serializedVersion: 2
-    m_Bits: 128
-  meterCheckRadius: 1
 --- !u!1001 &8086312175042984297
 PrefabInstance:
   m_ObjectHideFlags: 0
