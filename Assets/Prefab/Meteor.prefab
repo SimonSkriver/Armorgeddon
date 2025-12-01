@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6273015720406915984}
   - component: {fileID: 158539889214242617}
   - component: {fileID: 6171243893472505760}
+  - component: {fileID: 1487683994593386994}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Untagged
@@ -162,3 +163,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1487683994593386994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53035083441110162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25c5b5ad5f792f49bd4bd9ebf1069ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 500
+  bounce:
+    m_Name: Bounce
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 539fdc80-b76f-4f52-892a-8187e1ffa5bd
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 46d07cc1-5a5d-4e32-931a-331b808305d9
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Bounce
+      m_Flags: 0
+    m_Flags: 0
