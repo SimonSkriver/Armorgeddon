@@ -20,7 +20,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (meteorCollider != null)
         {
-            Debug.Log("You hit a meteor");
             meteorScript.BounceAway();
         }
     }
