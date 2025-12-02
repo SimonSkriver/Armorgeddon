@@ -12,9 +12,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
 
     [Header("Ground check settings")]
-    public Transform groundCheck;
-    public LayerMask groundLayer;
-    public Vector2 groundCeckSize;
+    Transform groundCheck;
+    LayerMask groundLayer;
+    Vector2 groundCeckSize;
 
     private bool isGrounded;
 
