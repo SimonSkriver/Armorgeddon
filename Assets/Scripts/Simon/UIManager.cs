@@ -1,7 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +9,14 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         scoreText.text = "Castle health: " + health.ToString();
+    }
+
+    void OnTriggerEnter2D(Collider2D meteor)
+    {
+        if (meteor.CompareTag("Meteor"))
+        {
+            TakeDamage();
+        }
     }
 
     public void TakeDamage()

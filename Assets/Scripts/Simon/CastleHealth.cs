@@ -15,7 +15,6 @@ public class CastleHealth : MonoBehaviour
     {
         if (meteor.CompareTag("Meteor"))
         {
-            Debug.Log("Damage dealt");
             currentHealth--;
         }
     }

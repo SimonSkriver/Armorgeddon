@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8384163570523517469}
   - component: {fileID: 6854960404185837321}
   - component: {fileID: 64522649553904345}
+  - component: {fileID: 4039088231831557726}
   - component: {fileID: 6116693996003411066}
   m_Layer: 0
   m_Name: Player
@@ -66,6 +67,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8641023621146947616}
+  - {fileID: 278871459732882206}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3160803363676485895
@@ -216,6 +218,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCeckSize: {x: 1.28, y: 0.1}
+--- !u!114 &4039088231831557726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792224684971250697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ece0ed93f802ae4ea46c7d43dbb5c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorScript: {fileID: 0}
+  meteorCheck: {fileID: 278871459732882206}
+  meteor:
+    serializedVersion: 2
+    m_Bits: 128
+  meterCheckRadius: 1.61
 --- !u!114 &6116693996003411066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,3 +266,34 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1 &9011608072330437877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 278871459732882206}
+  m_Layer: 0
+  m_Name: MeteorHitCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &278871459732882206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9011608072330437877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15, y: 2.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4630422688095405704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
