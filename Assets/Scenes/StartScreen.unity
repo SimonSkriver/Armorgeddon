@@ -368,8 +368,6 @@ GameObject:
   - component: {fileID: 532462906}
   - component: {fileID: 532462905}
   - component: {fileID: 532462907}
-  - component: {fileID: 532462909}
-  - component: {fileID: 532462908}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -389,12 +387,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7091ad7f842a93d49be38f32d787ee7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7792224684971250697, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
   healthText: {fileID: 1682894057}
   castleHealth: {fileID: 1382197094}
-  startGameButton: {fileID: 1754240191}
-  gameOverButton: {fileID: 1585144292}
-  stopGame: {fileID: 532462908}
+  startGame: {fileID: 1754240191}
+  gameOver: {fileID: 1585144292}
 --- !u!4 &532462906
 Transform:
   m_ObjectHideFlags: 0
@@ -426,35 +422,6 @@ MonoBehaviour:
   spawner: {fileID: 0}
   healthBar: {fileID: 818745863}
   gameStartButton: {fileID: 1754240191}
---- !u!114 &532462908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532462904}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b4706d1c8a68b4083a07c3efb1b4d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 7792224684971250697, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
-  spawner: {fileID: 0}
---- !u!114 &532462909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532462904}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6004688fca15a447a1aff43c2c60fdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  spawner: {fileID: 0}
-  healthBar: {fileID: 0}
 --- !u!1 &809634509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1585144293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1665,7 +1632,7 @@ GameObject:
   - component: {fileID: 2087279062}
   - component: {fileID: 2087279061}
   m_Layer: 5
-  m_Name: PlayAgainButton
+  m_Name: PlayAgain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

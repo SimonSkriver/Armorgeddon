@@ -5,7 +5,6 @@ public class MeteorScript : MonoBehaviour
     private Rigidbody2D rb;
     public float speed = 5f;
     public int hitForce;
-    public UIManager ui;
 
     void Start()
     {
@@ -38,10 +37,7 @@ public class MeteorScript : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            ui.TakeDamage();
             Destroy(gameObject);
         }
     }
-    
-
 }

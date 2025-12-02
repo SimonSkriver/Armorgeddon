@@ -3,25 +3,34 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
-    public int health = 10;
+    [SerializeField] GameObject player;
+
+    [Header ("Health bar")]
+    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] CastleHealth castleHealth;
+
+    [Header ("Buttons")]
+    [SerializeField] GameObject startGameButton;
+    [SerializeField] GameObject gameOverButton;
+
+    [Header ("Game stopper")]
+    [SerializeField] StopGame stopGame;
+
 
     void Start()
     {
-        scoreText.text = "Castle health: " + health.ToString();
+        startGameButton.SetActive(true);
+        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
-
-    void OnTriggerEnter2D(Collider2D meteor)
+    
+    public void UpdateHealthText()
     {
-        if (meteor.CompareTag("Meteor"))
-        {
-            TakeDamage();
-        }
+        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
-
-    public void TakeDamage()
+    
+    public void GameOver()
     {
-        health--;
-        scoreText.text = "Castle health: " + health.ToString();
+        gameOverButton.SetActive(true);
+        stopGame.DisableGame();
     }
 }
