@@ -12,9 +12,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
 
     [Header("Ground check settings")]
-    public Transform groundCheck;
-    public LayerMask groundLayer;
-    public Vector2 groundCeckSize;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] Vector2 groundCeckSize;
 
     private bool isGrounded;
 
@@ -24,9 +24,10 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocityY);
     }
 
-    void OnJump(InputValue value) // Is called when you press space
+    void OnJump() // Is called when you press space
     {
-        if (value.isPressed && isGrounded) // Make sure you can only jump, when you're grounded
+        Debug.Log("Jump called");
+        if (isGrounded) // Make sure you can only jump, when you're grounded
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce); // Updates the Y velocity
         }
