@@ -4,12 +4,13 @@ public class CastleHealth : MonoBehaviour
 {
     [Header ("Castle health settings")]
     public int currentHealth;
-    public int maxHealth;
+    public int maxHealth = 10;
     public UIManager ui;
 
     void Start()
     {
         currentHealth = maxHealth;
+
     }
 
     void Update()

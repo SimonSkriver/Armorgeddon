@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,11 +17,13 @@ public class UIManager : MonoBehaviour
     [Header ("Game stopper")]
     [SerializeField] StopGame stopGame;
 
+    public Slider healthBar;
+
 
     void Start()
     {
         startGameButton.SetActive(true);
-        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+        
     }
     
     public void UpdateHealthText()
@@ -32,5 +35,14 @@ public class UIManager : MonoBehaviour
     {
         gameOverButton.SetActive(true);
         stopGame.DisableGame();
+    }
+
+    public void Update()
+
+    {
+        healthBar.value = castleHealth.currentHealth;
+        healthBar.maxValue = castleHealth.maxHealth;
+        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+
     }
 }
