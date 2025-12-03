@@ -40,8 +40,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: FarBackground
+    uniqueID: 3007909495
+    locked: 0
+  - name: Background
+    uniqueID: 3132209095
+    locked: 0
+  - name: Middleground
+    uniqueID: 684653937
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 2873994251
     locked: 0
   m_RenderingLayers:
   - Default
