@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public MeteorScript meteorScript;
+    private MeteorScript meteorScript;
 
     [Header ("Meteor check settings")]
     [SerializeField] Transform meteorCheck;
@@ -11,9 +11,17 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] float meterCheckRadius;
     private Collider2D meteorCollider;
 
+    private ScoreManager scoreManager;
+
+    void Start()
+    {
+        scoreManager = FindAnyObjectByType<ScoreManager>();
+    }
+
     void Update()
     {
         CheckMeteor();
+        meteorScript = FindAnyObjectByType<MeteorScript>();
     }
 
     void OnAttack()
@@ -21,9 +29,10 @@ public class PlayerAttack : MonoBehaviour
         if (meteorCollider != null)
         {
             meteorScript.BounceAway();
+            scoreManager.AddScore();
         }
     }
-
+    
     void CheckMeteor()
     {
         meteorCollider = Physics2D.OverlapCircle(meteorCheck.position, meterCheckRadius, meteor);
