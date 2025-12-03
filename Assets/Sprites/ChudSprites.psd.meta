@@ -116,27 +116,27 @@ ScriptedImporter:
     spriteBone:
     - name: shoulder_f
       guid: 58131bb4412857147a778f83207bc246
-      position: {x: 76.49289, y: 524.7627, z: 0}
+      position: {x: 76.49286, y: 524.7627, z: 0}
       rotation: {x: 0, y: 0, z: -0.5438219, w: 0.8392007}
-      length: 216.16302
+      length: 216.16306
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: forearm_f
       guid: f4e3e639a7826224ab40558c468dc0a4
-      position: {x: 216.16301, y: 0.000023792585, z: 0}
-      rotation: {x: 0, y: 0, z: -0.21060117, w: 0.9775721}
-      length: 127.13204
+      position: {x: 216.16306, y: 0.000026455204, z: 0}
+      rotation: {x: 0, y: 0, z: -0.21060133, w: 0.977572}
+      length: 127.132034
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: hand_f
       guid: d8684ce6f1f6e2b4cbf791d7b92c6f01
-      position: {x: 127.132034, y: -0.0000566313, z: 0}
-      rotation: {x: 0, y: 0, z: -0.107351586, w: 0.99422115}
-      length: 167.06772
+      position: {x: 127.13204, y: -0.00004766092, z: 0}
+      rotation: {x: 0, y: 0, z: -0.107351445, w: 0.99422115}
+      length: 167.06767
       parentId: 1
       color:
         serializedVersion: 2
@@ -772,7 +772,7 @@ ScriptedImporter:
       guid: f4c6cf6b15497cd4b8fe9e5924648f8e
       position: {x: -6.8329153, y: 5.489803, z: 0}
       rotation: {x: 0, y: 0, z: 0.9996274, w: 0.027296245}
-      length: 146.82463
+      length: 146.82465
       parentId: 1
       color:
         serializedVersion: 2
@@ -799,7 +799,7 @@ ScriptedImporter:
       guid: 835a3b3c15720bd408c0d4997e2abe46
       position: {x: 146.82481, y: -0.00002555965, z: 0}
       rotation: {x: 0, y: 0, z: 0.066113494, w: 0.99781215}
-      length: 108.13139
+      length: 108.13138
       parentId: 0
       color:
         serializedVersion: 2
@@ -1356,18 +1356,18 @@ ScriptedImporter:
     spriteBone:
     - name: foot_f
       guid: 5a5b5bfa82c0ca240b3fa046ca940ac6
-      position: {x: 108.13131, y: 0.000036188118, z: 0}
-      rotation: {x: 0, y: 0, z: -0.5986753, w: 0.80099183}
-      length: 65.45345
+      position: {x: 108.13131, y: 0.000059120433, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5986754, w: 0.80099183}
+      length: 65.45346
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4286643968
     - name: shin_f
       guid: 835a3b3c15720bd408c0d4997e2abe46
-      position: {x: 146.82475, y: -0.000025731651, z: 0}
+      position: {x: 146.82475, y: -0.000040985782, z: 0}
       rotation: {x: 0, y: 0, z: 0.066113494, w: 0.9978121}
-      length: 108.13139
+      length: 108.13138
       parentId: 2
       color:
         serializedVersion: 2
@@ -1376,7 +1376,7 @@ ScriptedImporter:
       guid: f4c6cf6b15497cd4b8fe9e5924648f8e
       position: {x: 63.423492, y: 296.12817, z: 0}
       rotation: {x: 0, y: 0, z: 0.7157902, w: -0.69831544}
-      length: 146.82466
+      length: 146.82468
       parentId: -1
       color:
         serializedVersion: 2
@@ -1928,8 +1928,8 @@ ScriptedImporter:
     - name: forearm_b
       guid: 8176fb4e2ad09eb4ab6f61f7decce80b
       position: {x: 315.7898, y: 234.74084, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7085279, w: 0.7056829}
-      length: 129.17133
+      rotation: {x: 0, y: 0, z: -0.708528, w: 0.7056829}
+      length: 129.17128
       parentId: -1
       color:
         serializedVersion: 2
@@ -2474,16 +2474,16 @@ ScriptedImporter:
     - name: shin_b
       guid: 0f72fb91463709746b1dc21adc6d817f
       position: {x: 153.0361, y: -0.000114865215, z: 0}
-      rotation: {x: 0, y: 0, z: 0.02915307, w: 0.99957496}
-      length: 101.73543
+      rotation: {x: 0, y: 0, z: 0.029152058, w: 0.99957496}
+      length: 101.73542
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: foot_b
       guid: 2753be8cb5181e34696b42a3ae9717bd
-      position: {x: 101.73532, y: -0.00007432344, z: 0}
-      rotation: {x: 0, y: 0, z: -0.62333876, w: 0.7819519}
+      position: {x: 101.73532, y: 0.00012331807, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6233381, w: 0.78195244}
       length: 66.66459
       parentId: 1
       color:
@@ -3004,7 +3004,7 @@ ScriptedImporter:
         rgba: 4278190335
     - name: spine_4
       guid: 33f045cbfd04c954aa1ee512b755fb46
-      position: {x: 156.88326, y: -0.00042212295, z: 0}
+      position: {x: 156.88326, y: -0.0003916243, z: 0}
       rotation: {x: 0, y: 0, z: -0.015639743, w: 0.9998777}
       length: 133.15071
       parentId: 0
@@ -3617,7 +3617,7 @@ ScriptedImporter:
     spriteBone:
     - name: head_1
       guid: 6de66a16d6707c84f9c94d8cdf488cc9
-      position: {x: 139.35892, y: -116.563416, z: 0}
+      position: {x: 139.3589, y: -116.563416, z: 0}
       rotation: {x: 0, y: 0, z: 0.74394584, w: 0.66823995}
       length: 94.16507
       parentId: -1
@@ -3626,8 +3626,8 @@ ScriptedImporter:
         rgba: 4294902015
     - name: ribbon_1
       guid: bcec442d08fed04479c2aa277fe47484
-      position: {x: 126.55218, y: 10.074258, z: 0}
-      rotation: {x: 0, y: 0, z: -0.253217, w: 0.96740955}
+      position: {x: 126.55217, y: 10.074258, z: 0}
+      rotation: {x: 0, y: 0, z: -0.25321725, w: 0.9674095}
       length: 21.287027
       parentId: 0
       color:
@@ -3635,217 +3635,217 @@ ScriptedImporter:
         rgba: 4294902015
     - name: ribbon_5
       guid: 8fac5897d87d2f8449fa91159d1b1915
-      position: {x: 21.28703, y: -0.0000039669903, z: 0}
-      rotation: {x: 0, y: 0, z: 0.73792917, w: 0.67487824}
-      length: 27.488775
-      parentId: 1
+      position: {x: 145.10951, y: -0.35494822, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5429889, w: 0.8397399}
+      length: 27.48877
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: ribbon_6
       guid: 33c5d3e4bf680ac48bd01c75d632c9c5
-      position: {x: 27.488781, y: -0.000009832627, z: 0}
-      rotation: {x: 0, y: 0, z: 0.037417676, w: 0.9992997}
-      length: 27.53654
-      parentId: 2
+      position: {x: 156.38889, y: 24.713194, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5740299, w: 0.81883436}
+      length: 27.536516
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: ribbon_7
       guid: 03680492b32ae3d428a70813e8c59857
-      position: {x: 27.536516, y: -0.000005986282, z: 0}
-      rotation: {x: 0, y: 0, z: -0.06639622, w: 0.9977934}
-      length: 25.700909
-      parentId: 3
+      position: {x: 165.77827, y: 50.599487, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5183963, w: 0.85514057}
+      length: 25.700869
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4286643968
     - name: ribbon_8
       guid: 9d225e02f302120498927a1bca66e788
-      position: {x: 25.700893, y: -0.0000118539765, z: 0}
-      rotation: {x: 0, y: 0, z: -0.49807155, w: 0.867136}
-      length: 21.365702
-      parentId: 4
+      position: {x: 177.66571, y: 73.38595, z: 0}
+      rotation: {x: 0, y: 0, z: 0.023598235, w: 0.9997216}
+      length: 21.365643
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294934528
     - name: ribbon_9
       guid: 882877e6870cfde4ea406814933fb437
-      position: {x: 21.365635, y: -0.0000030785968, z: 0}
-      rotation: {x: 0, y: 0, z: -0.32365298, w: 0.9461759}
-      length: 20.369066
-      parentId: 5
+      position: {x: 199.00755, y: 74.394066, z: 0}
+      rotation: {x: 0, y: 0, z: -0.30123436, w: 0.95355016}
+      length: 20.369123
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: ribbon_10
       guid: 9caca3910f2acaa4682b82e1c065eeb2
-      position: {x: 20.369122, y: 0.000025285986, z: 0}
-      rotation: {x: 0, y: 0, z: -0.28001443, w: 0.9599958}
-      length: 36.31936
-      parentId: 6
+      position: {x: 215.68001, y: 62.69234, z: 0}
+      rotation: {x: 0, y: 0, z: -0.55619216, w: 0.83105373}
+      length: 36.31937
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4286578943
     - name: ribbon_11
       guid: 556f5026662c02941ad16bf253166e3a
-      position: {x: 36.31936, y: -0.0000020157636, z: 0}
-      rotation: {x: 0, y: 0, z: -0.16675708, w: 0.9859981}
-      length: 40.415325
-      parentId: 7
+      position: {x: 229.52864, y: 29.116909, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6869882, w: 0.72666854}
+      length: 40.41536
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: ribbon_12
       guid: 9995455430f16d94186f93050425a7ca
-      position: {x: 40.41535, y: -0.00000390316, z: 0}
-      rotation: {x: 0, y: 0, z: -0.009894535, w: 0.99995106}
-      length: 42.661995
-      parentId: 8
+      position: {x: 231.7957, y: -11.234817, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6941447, w: 0.71983546}
+      length: 42.662025
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: ribbon_13
       guid: 37bbd53b17d08924fbf981bc354871e3
-      position: {x: 42.66201, y: -0.0000742844, z: 0}
-      rotation: {x: 0, y: 0, z: -0.027972016, w: 0.9996087}
-      length: 53.688854
-      parentId: 9
+      position: {x: 233.34538, y: -53.868626, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7140082, w: 0.7001373}
+      length: 53.688866
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: ribbon_14
       guid: ba904175de896d2429d0506f3cd5a6dd
-      position: {x: 53.68886, y: 0.000004030677, z: 0}
-      rotation: {x: 0, y: 0, z: -0.014122199, w: 0.9999003}
+      position: {x: 232.29225, y: -107.54716, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7238246, w: 0.68998396}
       length: 55.457413
-      parentId: 10
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: ribbon_15
       guid: e307375dce91cb547812f87607e60e37
-      position: {x: 55.457413, y: -0.000054505577, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0018831803, w: 0.9999983}
-      length: 67.66229
-      parentId: 11
+      position: {x: 229.63884, y: -162.94104, z: 0}
+      rotation: {x: 0, y: 0, z: -0.72512305, w: 0.6886195}
+      length: 67.66228
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: ribbon_16
       guid: 143767fc61308f24783a7aa1b47fdacd
-      position: {x: 67.66229, y: -0.00006678548, z: 0}
-      rotation: {x: 0, y: 0, z: 0.040922448, w: 0.9991623}
-      length: 58.254425
-      parentId: 12
+      position: {x: 226.14696, y: -230.51312, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6963353, w: 0.71771675}
+      length: 58.25442
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: ribbon_17
       guid: 457439feb60d1364ea4db6a0b899637a
-      position: {x: 58.25446, y: -0.0000016378253, z: 0}
-      rotation: {x: 0, y: 0, z: 0.043778844, w: 0.99904126}
-      length: 56.790855
-      parentId: 13
+      position: {x: 227.90825, y: -288.7409, z: 0}
+      rotation: {x: 0, y: 0, z: -0.66424686, w: 0.7475134}
+      length: 56.79083
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: ribbon_18
       guid: 42b5f6863781f874aa09ced39e475bcc
-      position: {x: 56.790794, y: 0.000021185515, z: 0}
-      rotation: {x: 0, y: 0, z: 0.11537956, w: 0.9933215}
-      length: 56.440975
-      parentId: 14
+      position: {x: 234.58403, y: -345.13803, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5735632, w: 0.8191613}
+      length: 56.440964
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4286643968
     - name: ribbon_19
       guid: 99fc35d1a27467d488eac073e6d6588e
-      position: {x: 56.44095, y: -0.00000616095, z: 0}
-      rotation: {x: 0, y: 0, z: 0.0976716, w: 0.99521875}
-      length: 44.852634
-      parentId: 15
+      position: {x: 253.88968, y: -398.1745, z: 0}
+      rotation: {x: 0, y: 0, z: -0.49081215, w: 0.8712655}
+      length: 44.852516
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294934528
     - name: ribbon_20
       guid: 4bf083f6346891b499c60ebba1c1d2a5
-      position: {x: 44.852463, y: -0.00003065871, z: 0}
-      rotation: {x: 0, y: 0, z: 0.11339041, w: 0.9935505}
-      length: 38.98485
-      parentId: 16
+      position: {x: 277.13257, y: -436.5348, z: 0}
+      rotation: {x: 0, y: 0, z: -0.3888526, w: 0.92129993}
+      length: 38.98482
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: ribbon_21
       guid: 13a69d2a7676d194f8ca983806d82f98
-      position: {x: 38.984898, y: -0.0000067073706, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19169597, w: 0.9814544}
-      length: 28.043375
-      parentId: 17
+      position: {x: 304.3279, y: -464.46747, z: 0}
+      rotation: {x: 0, y: 0, z: -0.20503257, w: 0.9787551}
+      length: 28.043512
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4286578943
     - name: ribbon_22
       guid: 3bca880eec995694caefaddba88682cf
-      position: {x: 28.043484, y: -0.00000995323, z: 0}
-      rotation: {x: 0, y: 0, z: 0.23436335, w: 0.97214913}
+      position: {x: 330.01352, y: -475.7227, z: 0}
+      rotation: {x: 0, y: 0, z: 0.030062564, w: 0.999548}
       length: 36.6362
-      parentId: 18
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: ribbon_23
       guid: e5409ebfcaf47f84a9b268455508bd99
-      position: {x: 36.63621, y: 0.00004939404, z: 0}
-      rotation: {x: 0, y: 0, z: 0.13265844, w: 0.9911619}
-      length: 34.63487
-      parentId: 19
+      position: {x: 366.5835, y: -473.52106, z: 0}
+      rotation: {x: 0, y: 0, z: 0.16239622, w: 0.9867257}
+      length: 34.634888
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: ribbon_24
       guid: a15a7c6797ed82b458acd6b18f6e1281
-      position: {x: 34.634922, y: 0.0001246889, z: 0}
-      rotation: {x: 0, y: 0, z: 0.21045731, w: 0.977603}
+      position: {x: 399.39157, y: -462.4212, z: 0}
+      rotation: {x: 0, y: 0, z: 0.3664219, w: 0.9304489}
       length: 32.262596
-      parentId: 20
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: ribbon_25
       guid: f31d9dc4ebf9b71478d92cb401a0131c
-      position: {x: 32.26259, y: -0.000009141844, z: 0}
-      rotation: {x: 0, y: 0, z: 0.06568275, w: 0.9978406}
-      length: 42.67994
-      parentId: 21
+      position: {x: 422.99057, y: -440.42212, z: 0}
+      rotation: {x: 0, y: 0, z: 0.4267451, w: 0.9043719}
+      length: 42.679943
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: ribbon_26
       guid: b7c3100a70955684ba7b7a9cb40f0694
-      position: {x: 42.679913, y: 0.00006417126, z: 0}
-      rotation: {x: 0, y: 0, z: 0.10140242, w: 0.9948455}
-      length: 49.48408
-      parentId: 22
+      position: {x: 450.12537, y: -407.47873, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5162508, w: 0.8564375}
+      length: 49.484074
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: ribbon_27
       guid: 3e20615247c53284f8247c01e3325338
-      position: {x: 49.48408, y: -0.00004187339, z: 0}
-      rotation: {x: 0, y: 0, z: -0.02862809, w: 0.99959016}
-      length: 45.54675
-      parentId: 23
+      position: {x: 473.23294, y: -363.72128, z: 0}
+      rotation: {x: 0, y: 0, z: 0.4915201, w: 0.87086624}
+      length: 45.546745
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: ribbon_28
       guid: d77c39c8a705f964e8c4f58b698ba0eb
-      position: {x: 45.546738, y: 0.00009030761, z: 0}
-      rotation: {x: 0, y: 0, z: -0.033799253, w: 0.99942863}
-      length: 26.247343
-      parentId: 24
+      position: {x: 496.77206, y: -324.72873, z: 0}
+      rotation: {x: 0, y: 0, z: 0.46180543, w: 0.88698125}
+      length: 26.247353
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
@@ -4500,25 +4500,25 @@ ScriptedImporter:
     spriteBone:
     - name: hand_b
       guid: 0eb8385bc6fbcb94e8b00b326b352e0a
-      position: {x: 129.17131, y: 0.0000785475, z: 0}
-      rotation: {x: 0, y: 0, z: -0.103612594, w: 0.99461776}
-      length: 157.79802
+      position: {x: 129.17128, y: 0.00007921722, z: 0}
+      rotation: {x: 0, y: 0, z: -0.10361256, w: 0.9946178}
+      length: 157.79803
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: forearm_b
       guid: 8176fb4e2ad09eb4ab6f61f7decce80b
-      position: {x: 216.03966, y: -0.0001239022, z: 0}
-      rotation: {x: 0, y: 0, z: -0.21210642, w: 0.9772466}
-      length: 129.17134
+      position: {x: 216.03963, y: -0.00010460055, z: 0}
+      rotation: {x: 0, y: 0, z: -0.21210648, w: 0.97724664}
+      length: 129.17131
       parentId: 2
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: shoulder_b
       guid: 50f87fca3f37eeb48acd6520445d54bd
-      position: {x: 76.01999, y: 509.70044, z: 0}
+      position: {x: 76.01996, y: 509.70044, z: 0}
       rotation: {x: 0, y: 0, z: -0.5427266, w: 0.83990943}
       length: 216.03972
       parentId: -1
@@ -4527,9 +4527,9 @@ ScriptedImporter:
         rgba: 4294901760
     - name: forearm_f
       guid: f4e3e639a7826224ab40558c468dc0a4
-      position: {x: 164.79886, y: 311.4596, z: 0}
-      rotation: {x: 0, y: 0, z: -0.70836174, w: 0.70584965}
-      length: 127.13203
+      position: {x: 164.79883, y: 311.4596, z: 0}
+      rotation: {x: 0, y: 0, z: -0.70836186, w: 0.7058495}
+      length: 127.13201
       parentId: -1
       color:
         serializedVersion: 2
@@ -5242,7 +5242,7 @@ ScriptedImporter:
         rgba: 4278255615
     - name: spine_4
       guid: 33f045cbfd04c954aa1ee512b755fb46
-      position: {x: 156.88327, y: -0.00039451872, z: 0}
+      position: {x: 156.88327, y: -0.0003792694, z: 0}
       rotation: {x: 0, y: 0, z: -0.015639737, w: 0.99987775}
       length: 133.15073
       parentId: 1
@@ -5262,23 +5262,23 @@ ScriptedImporter:
       guid: f4c6cf6b15497cd4b8fe9e5924648f8e
       position: {x: -6.8329654, y: 5.489811, z: 0}
       rotation: {x: 0, y: -0, z: 0.9996274, w: 0.027296208}
-      length: 146.82468
+      length: 146.82469
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: shin_f
       guid: 835a3b3c15720bd408c0d4997e2abe46
-      position: {x: 146.8247, y: -0.000043410073, z: 0}
+      position: {x: 146.82472, y: -0.00005828714, z: 0}
       rotation: {x: 0, y: 0, z: 0.06611345, w: 0.99781215}
-      length: 108.13139
+      length: 108.13138
       parentId: 4
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: foot_f
       guid: 5a5b5bfa82c0ca240b3fa046ca940ac6
-      position: {x: 108.131386, y: 0.000013143021, z: 0}
+      position: {x: 108.13138, y: 0.000012411871, z: 0}
       rotation: {x: 0, y: 0, z: -0.5986753, w: 0.8009919}
       length: 65.45345
       parentId: 5
@@ -5297,7 +5297,7 @@ ScriptedImporter:
     - name: shin_b
       guid: 0f72fb91463709746b1dc21adc6d817f
       position: {x: 153.03609, y: -0.00013080509, z: 0}
-      rotation: {x: 0, y: 0, z: 0.02915309, w: 0.99957496}
+      rotation: {x: 0, y: 0, z: 0.029152067, w: 0.999575}
       length: 101.73543
       parentId: 7
       color:
@@ -5305,8 +5305,8 @@ ScriptedImporter:
         rgba: 4294901888
     - name: foot_b
       guid: 2753be8cb5181e34696b42a3ae9717bd
-      position: {x: 101.73543, y: -0.00009688105, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6233389, w: 0.7819519}
+      position: {x: 101.73543, y: 0.000094767645, z: 0}
+      rotation: {x: 0, y: 0, z: -0.62333816, w: 0.7819525}
       length: 66.66459
       parentId: 8
       color:
@@ -5316,7 +5316,7 @@ ScriptedImporter:
       guid: 58131bb4412857147a778f83207bc246
       position: {x: 16.378973, y: -66.72638, z: 0}
       rotation: {x: 0, y: -0, z: -0.9783521, w: 0.20694712}
-      length: 216.16302
+      length: 216.16304
       parentId: 2
       color:
         serializedVersion: 2
@@ -5324,16 +5324,16 @@ ScriptedImporter:
     - name: forearm_f
       guid: f4e3e639a7826224ab40558c468dc0a4
       position: {x: 216.16302, y: -0.000004121979, z: 0}
-      rotation: {x: 0, y: 0, z: -0.21060118, w: 0.9775721}
-      length: 127.132034
+      rotation: {x: 0, y: 0, z: -0.21060136, w: 0.977572}
+      length: 127.13203
       parentId: 10
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: hand_f
       guid: d8684ce6f1f6e2b4cbf791d7b92c6f01
-      position: {x: 127.132034, y: -0.000030678813, z: 0}
-      rotation: {x: 0, y: 0, z: -0.10735158, w: 0.99422115}
+      position: {x: 127.13202, y: -0.000007016562, z: 0}
+      rotation: {x: 0, y: 0, z: -0.10735144, w: 0.99422115}
       length: 167.0677
       parentId: 11
       color:
@@ -5343,24 +5343,24 @@ ScriptedImporter:
       guid: 50f87fca3f37eeb48acd6520445d54bd
       position: {x: 17.318563, y: -66.25716, z: 0}
       rotation: {x: 0, y: -0, z: -0.97808135, w: 0.20822336}
-      length: 216.03966
+      length: 216.03969
       parentId: 2
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: forearm_b
       guid: 8176fb4e2ad09eb4ab6f61f7decce80b
-      position: {x: 216.03969, y: 0.00002758679, z: 0}
-      rotation: {x: 0, y: 0, z: -0.21210651, w: 0.9772466}
-      length: 129.17133
+      position: {x: 216.0397, y: -0.000012775083, z: 0}
+      rotation: {x: 0, y: 0, z: -0.21210653, w: 0.9772466}
+      length: 129.1713
       parentId: 13
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: hand_b
       guid: 0eb8385bc6fbcb94e8b00b326b352e0a
-      position: {x: 129.17131, y: 0.0000022471236, z: 0}
-      rotation: {x: 0, y: 0, z: -0.10361254, w: 0.9946178}
+      position: {x: 129.17131, y: -0.00001705541, z: 0}
+      rotation: {x: 0, y: 0, z: -0.10361253, w: 0.9946178}
       length: 157.79799
       parentId: 14
       color:
@@ -5369,225 +5369,225 @@ ScriptedImporter:
     - name: ribbon_1
       guid: bcec442d08fed04479c2aa277fe47484
       position: {x: 126.55218, y: 10.074267, z: 0}
-      rotation: {x: 0, y: 0, z: -0.25321698, w: 0.96740955}
-      length: 21.287024
+      rotation: {x: 0, y: 0, z: -0.25321725, w: 0.96740943}
+      length: 21.28703
       parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: ribbon_5
       guid: 8fac5897d87d2f8449fa91159d1b1915
-      position: {x: 21.287012, y: -0.000018473398, z: 0}
-      rotation: {x: 0, y: -0, z: 0.7379291, w: 0.67487824}
-      length: 27.488775
-      parentId: 16
+      position: {x: 145.10953, y: -0.35493782, z: 0}
+      rotation: {x: 0, y: 0, z: 0.54298884, w: 0.8397399}
+      length: 27.488773
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: ribbon_6
       guid: 33c5d3e4bf680ac48bd01c75d632c9c5
-      position: {x: 27.488773, y: -0.000014730297, z: 0}
-      rotation: {x: 0, y: 0, z: 0.037417687, w: 0.9992997}
-      length: 27.536537
-      parentId: 17
+      position: {x: 156.3889, y: 24.713205, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5740299, w: 0.81883436}
+      length: 27.536518
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: ribbon_7
       guid: 03680492b32ae3d428a70813e8c59857
-      position: {x: 27.53652, y: 0.0000045136467, z: 0}
-      rotation: {x: 0, y: 0, z: -0.066396154, w: 0.9977934}
-      length: 25.700907
-      parentId: 18
+      position: {x: 165.77829, y: 50.5995, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5183963, w: 0.85514057}
+      length: 25.700867
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4286643968
     - name: ribbon_8
       guid: 9d225e02f302120498927a1bca66e788
-      position: {x: 25.700882, y: 0.000013487742, z: 0}
-      rotation: {x: 0, y: 0, z: -0.49807164, w: 0.8671359}
-      length: 21.365705
-      parentId: 19
+      position: {x: 177.66573, y: 73.38596, z: 0}
+      rotation: {x: 0, y: 0, z: 0.023598248, w: 0.9997216}
+      length: 21.36564
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294934528
     - name: ribbon_9
       guid: 882877e6870cfde4ea406814933fb437
-      position: {x: 21.365633, y: 0.0000025774498, z: 0}
-      rotation: {x: 0, y: 0, z: -0.3236529, w: 0.9461759}
-      length: 20.36907
-      parentId: 20
+      position: {x: 199.00757, y: 74.39408, z: 0}
+      rotation: {x: 0, y: 0, z: -0.30123436, w: 0.95355016}
+      length: 20.369123
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: ribbon_10
       guid: 9caca3910f2acaa4682b82e1c065eeb2
-      position: {x: 20.36912, y: 0.00002204174, z: 0}
-      rotation: {x: 0, y: 0, z: -0.2800144, w: 0.9599958}
+      position: {x: 215.68002, y: 62.692364, z: 0}
+      rotation: {x: 0, y: 0, z: -0.55619216, w: 0.83105373}
       length: 36.319366
-      parentId: 21
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4286578943
     - name: ribbon_11
       guid: 556f5026662c02941ad16bf253166e3a
-      position: {x: 36.31936, y: -0.00002330284, z: 0}
-      rotation: {x: 0, y: 0, z: -0.16675718, w: 0.98599803}
-      length: 40.41533
-      parentId: 22
+      position: {x: 229.52866, y: 29.116924, z: 0}
+      rotation: {x: 0, y: 0, z: -0.68698823, w: 0.72666854}
+      length: 40.415356
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: ribbon_12
       guid: 9995455430f16d94186f93050425a7ca
-      position: {x: 40.41536, y: 0.000034963694, z: 0}
-      rotation: {x: 0, y: 0, z: -0.009894475, w: 0.99995106}
-      length: 42.662
-      parentId: 23
+      position: {x: 231.79573, y: -11.2348, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6941448, w: 0.7198355}
+      length: 42.662014
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278255360
     - name: ribbon_13
       guid: 37bbd53b17d08924fbf981bc354871e3
-      position: {x: 42.662018, y: -0.0000689535, z: 0}
-      rotation: {x: 0, y: 0, z: -0.027971955, w: 0.9996087}
-      length: 53.688858
-      parentId: 24
+      position: {x: 233.34541, y: -53.86861, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7140082, w: 0.7001373}
+      length: 53.688866
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: ribbon_14
       guid: ba904175de896d2429d0506f3cd5a6dd
-      position: {x: 53.68886, y: -0.00001810033, z: 0}
-      rotation: {x: 0, y: 0, z: -0.014122223, w: 0.9999003}
-      length: 55.457417
-      parentId: 25
+      position: {x: 232.29227, y: -107.54714, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7238247, w: 0.68998396}
+      length: 55.45741
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: ribbon_15
       guid: e307375dce91cb547812f87607e60e37
-      position: {x: 55.457424, y: -0.00007801633, z: 0}
-      rotation: {x: 0, y: 0, z: -0.0018832091, w: 0.9999982}
-      length: 67.6623
-      parentId: 26
+      position: {x: 229.63885, y: -162.94102, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7251229, w: 0.6886195}
+      length: 67.66229
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: ribbon_16
       guid: 143767fc61308f24783a7aa1b47fdacd
-      position: {x: 67.66231, y: -0.00004795786, z: 0}
-      rotation: {x: 0, y: 0, z: 0.040922515, w: 0.9991623}
-      length: 58.254425
-      parentId: 27
+      position: {x: 226.14699, y: -230.5131, z: 0}
+      rotation: {x: 0, y: 0, z: -0.69633526, w: 0.7177167}
+      length: 58.25443
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: ribbon_17
       guid: 457439feb60d1364ea4db6a0b899637a
-      position: {x: 58.254425, y: 0.000016589373, z: 0}
-      rotation: {x: 0, y: 0, z: 0.04377885, w: 0.99904126}
-      length: 56.79086
-      parentId: 28
+      position: {x: 227.90828, y: -288.74088, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6642468, w: 0.74751335}
+      length: 56.790833
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: ribbon_18
       guid: 42b5f6863781f874aa09ced39e475bcc
-      position: {x: 56.79082, y: 0.00002427417, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1153795, w: 0.9933215}
-      length: 56.440975
-      parentId: 29
+      position: {x: 234.58408, y: -345.138, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5735632, w: 0.8191613}
+      length: 56.440968
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4286643968
     - name: ribbon_19
       guid: 99fc35d1a27467d488eac073e6d6588e
-      position: {x: 56.44098, y: -0.000029655163, z: 0}
-      rotation: {x: 0, y: 0, z: 0.097671665, w: 0.9952187}
-      length: 44.852634
-      parentId: 30
+      position: {x: 253.88972, y: -398.17447, z: 0}
+      rotation: {x: 0, y: 0, z: -0.49081218, w: 0.8712655}
+      length: 44.852512
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294934528
     - name: ribbon_20
       guid: 4bf083f6346891b499c60ebba1c1d2a5
-      position: {x: 44.85254, y: -0.000023029614, z: 0}
-      rotation: {x: 0, y: 0, z: 0.113390245, w: 0.99355054}
-      length: 38.984856
-      parentId: 31
+      position: {x: 277.13263, y: -436.53476, z: 0}
+      rotation: {x: 0, y: 0, z: -0.38885263, w: 0.9213}
+      length: 38.984818
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901888
     - name: ribbon_21
       guid: 13a69d2a7676d194f8ca983806d82f98
-      position: {x: 38.98481, y: 0.000015267658, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19169602, w: 0.9814544}
-      length: 28.043379
-      parentId: 32
+      position: {x: 304.32794, y: -464.46744, z: 0}
+      rotation: {x: 0, y: 0, z: -0.2050326, w: 0.9787552}
+      length: 28.043509
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4286578943
     - name: ribbon_22
       guid: 3bca880eec995694caefaddba88682cf
-      position: {x: 28.043478, y: -0.000030408493, z: 0}
-      rotation: {x: 0, y: 0, z: 0.23436336, w: 0.9721491}
-      length: 36.6362
-      parentId: 33
+      position: {x: 330.01355, y: -475.7227, z: 0}
+      rotation: {x: 0, y: 0, z: 0.03006256, w: 0.9995481}
+      length: 36.636196
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: ribbon_23
       guid: e5409ebfcaf47f84a9b268455508bd99
-      position: {x: 36.636242, y: 0.000025726516, z: 0}
-      rotation: {x: 0, y: 0, z: 0.13265847, w: 0.9911618}
-      length: 34.63487
-      parentId: 34
+      position: {x: 366.58353, y: -473.521, z: 0}
+      rotation: {x: 0, y: 0, z: 0.16239622, w: 0.9867256}
+      length: 34.634888
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278255488
     - name: ribbon_24
       guid: a15a7c6797ed82b458acd6b18f6e1281
-      position: {x: 34.63495, y: 0.000081018545, z: 0}
-      rotation: {x: 0, y: 0, z: 0.2104572, w: 0.9776031}
-      length: 32.262596
-      parentId: 35
+      position: {x: 399.3916, y: -462.42114, z: 0}
+      rotation: {x: 0, y: 0, z: 0.3664219, w: 0.9304489}
+      length: 32.262592
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: ribbon_25
       guid: f31d9dc4ebf9b71478d92cb401a0131c
-      position: {x: 32.26259, y: 0.0000065949607, z: 0}
-      rotation: {x: 0, y: 0, z: 0.06568292, w: 0.9978406}
-      length: 42.679947
-      parentId: 36
+      position: {x: 422.99063, y: -440.42206, z: 0}
+      rotation: {x: 0, y: 0, z: 0.4267451, w: 0.904372}
+      length: 42.67994
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901760
     - name: ribbon_26
       guid: b7c3100a70955684ba7b7a9cb40f0694
-      position: {x: 42.679928, y: 0.000008741554, z: 0}
-      rotation: {x: 0, y: 0, z: 0.10140232, w: 0.9948455}
-      length: 49.484077
-      parentId: 37
+      position: {x: 450.12543, y: -407.47867, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5162508, w: 0.8564375}
+      length: 49.48407
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: ribbon_27
       guid: 3e20615247c53284f8247c01e3325338
-      position: {x: 49.48409, y: -0.000003687297, z: 0}
-      rotation: {x: 0, y: 0, z: -0.028628027, w: 0.99959016}
-      length: 45.54675
-      parentId: 38
+      position: {x: 473.233, y: -363.72122, z: 0}
+      rotation: {x: 0, y: 0, z: 0.4915201, w: 0.8708662}
+      length: 45.546745
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: ribbon_28
       guid: d77c39c8a705f964e8c4f58b698ba0eb
-      position: {x: 45.546734, y: 0.000034272583, z: 0}
-      rotation: {x: 0, y: 0, z: -0.033799324, w: 0.99942863}
+      position: {x: 496.7721, y: -324.72867, z: 0}
+      rotation: {x: 0, y: 0, z: 0.46180543, w: 0.8869813}
       length: 26.247347
-      parentId: 39
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4278255615
