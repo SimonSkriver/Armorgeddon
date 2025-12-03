@@ -9,14 +9,14 @@ public class PlayerController : MonoBehaviour
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
-    private Vector2 moveInput;
+    public Vector2 moveInput;
 
     [Header("Ground check settings")]
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Vector2 groundCeckSize;
 
-    private bool isGrounded;
+    public bool isGrounded;
 
     void Update()
     {
@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     void CheckGrounded()
     {
         isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, groundLayer); //This function is called from update, which means that the bool "isGrounded" constantly gets updated. The bool turns true, when the OverlapBox hits the Ground layer
+        Debug.Log("Grounded");
     }
 
     void OnDrawGizmosSelected() // For debugging purposes. Draws an outline around the groundCheck box
