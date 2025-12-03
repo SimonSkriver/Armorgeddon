@@ -140,7 +140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   hitForce: 100
-  ui: {fileID: 0}
 --- !u!50 &8498308754199090135
 Rigidbody2D:
   serializedVersion: 5
