@@ -1,27 +1,44 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
-    public int health = 10;
+    [SerializeField] GameObject player;
+
+    [Header ("Health bar")]
+    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] CastleHealth castleHealth;
+
+    [Header ("Buttons")]
+    [SerializeField] GameObject startGameButton;
+    [SerializeField] GameObject gameOverButton;
+
+    [Header ("Game stopper")]
+    [SerializeField] StopGame stopGame;
+
+    public Slider healthBar;
 
     void Start()
     {
-        scoreText.text = "Castle health: " + health.ToString();
+        startGameButton.SetActive(true);
+        healthBar.maxValue = castleHealth.maxHealth;
     }
-
-    void OnTriggerEnter2D(Collider2D meteor)
+    
+    public void Update()
     {
-        if (meteor.CompareTag("Meteor"))
-        {
-            TakeDamage();
-        }
+        healthBar.value = castleHealth.currentHealth;
+        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
-
-    public void TakeDamage()
+    
+    public void UpdateHealthText()
     {
-        health--;
-        scoreText.text = "Castle health: " + health.ToString();
+        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+    }
+    
+    public void GameOver()
+    {
+        gameOverButton.SetActive(true);
+        stopGame.DisableGame();
     }
 }
