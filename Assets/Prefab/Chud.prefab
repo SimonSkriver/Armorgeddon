@@ -3374,11 +3374,13 @@ MonoBehaviour:
   rb: {fileID: 5834645034705747479}
   moveSpeed: 10
   jumpForce: 15
+  moveInput: {x: 0, y: 0}
   groundCheck: {fileID: 7180440136069139102}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  groundCeckSize: {x: 0.87, y: 0.1}
+  groundCeckSize: {x: 0.9, y: 0.1}
+  isGrounded: 0
 --- !u!114 &4070624231343215477
 MonoBehaviour:
   m_ObjectHideFlags: 0
