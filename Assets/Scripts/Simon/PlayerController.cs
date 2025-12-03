@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
-    [SerializeField] float invinsibilityTime = 0.3f;
-    private Vector2 moveInput;
+    //[SerializeField] float invinsibilityTime = 0.3f;
+    public Vector2 moveInput;
 
     [Header("Ground and platform check settings")]
     [SerializeField] Transform groundCheck;
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask platformLayer;
     [SerializeField] Vector2 groundCeckSize;
     
-    private bool isGrounded;
+    public bool isGrounded;
     private Collider2D platform;
 
     void Update()
