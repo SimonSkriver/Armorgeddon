@@ -16,5 +16,4 @@ public class GameStartButton : MonoBehaviour
         healthBar.SetActive(true);
         gameStartButton.SetActive(false);
     }
-
 }

@@ -11,5 +11,4 @@ public class StopGame : MonoBehaviour
         Destroy(player);
         Destroy(spawner);
     }
-
 }

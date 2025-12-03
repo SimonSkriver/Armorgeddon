@@ -19,11 +19,16 @@ public class UIManager : MonoBehaviour
 
     public Slider healthBar;
 
-
     void Start()
     {
         startGameButton.SetActive(true);
-        
+        healthBar.maxValue = castleHealth.maxHealth;
+    }
+    
+    public void Update()
+    {
+        healthBar.value = castleHealth.currentHealth;
+        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
     
     public void UpdateHealthText()
@@ -35,14 +40,5 @@ public class UIManager : MonoBehaviour
     {
         gameOverButton.SetActive(true);
         stopGame.DisableGame();
-    }
-
-    public void Update()
-
-    {
-        healthBar.value = castleHealth.currentHealth;
-        healthBar.maxValue = castleHealth.maxHealth;
-        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
-
     }
 }

@@ -662,7 +662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7792224684971250697, guid: d40f0380ecfdc7646a68384e7a302c47, type: 3}
   spawner: {fileID: 0}
-  healthBar: {fileID: 818745863}
+  healthBar: {fileID: 424587524}
   gameStartButton: {fileID: 1754240191}
 --- !u!114 &532462908
 MonoBehaviour:
@@ -847,11 +847,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &818745863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5662700979629922969, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
-  m_PrefabInstance: {fileID: 8086312175042984297}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1041362898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,7 +1583,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6594640653654815633, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
   m_PrefabInstance: {fileID: 8086312175042984297}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818745863}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
