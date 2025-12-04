@@ -27,6 +27,7 @@ public class CastleHealth : MonoBehaviour
         {
             currentHealth--;
             //ui.UpdateHealthText();
+            Destroy(meteor.gameObject); 
         }
     }
 }
