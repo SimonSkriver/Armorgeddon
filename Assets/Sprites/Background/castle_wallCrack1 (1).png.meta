@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29ff0324cc8eb7f45808662e7482a228
+guid: c8ce94b946c471e4fade6138c9e467e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1048935679782317551
-    second: castle_wallCrack2_0
+      213: -4810316327820969253
+    second: castle_wallCrack1 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: castle_wallCrack2_0
+      name: castle_wallCrack1 (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 4000
-        height: 2808
+        height: 2824
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11297568e8e6171f0800000000000000
-      internalID: -1048935679782317551
+      spriteID: bda38f639c25e3db0800000000000000
+      internalID: -4810316327820969253
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      castle_wallCrack2_0: -1048935679782317551
+      castle_wallCrack1 (1)_0: -4810316327820969253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
