@@ -7,13 +7,9 @@ public class GameStartButton : MonoBehaviour
     [SerializeField] GameObject spawner;
     [SerializeField] GameObject healthBar;
 
-    [Header ("To disable button")]
-    [SerializeField] GameObject gameStartButton;
-
     public void StartGame()
     {
         //Instantiate(player, new Vector2(0f, -1.851854f), transform.rotation);
         healthBar.SetActive(true);
-        gameStartButton.SetActive(false);
     }
 }
