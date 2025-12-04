@@ -577,6 +577,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 960134605719843496, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.4945314
+      objectReference: {fileID: 0}
+    - target: {fileID: 960134605719843496, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960134605719843496, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -488
+      objectReference: {fileID: 0}
     - target: {fileID: 1084147348773066987, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
       propertyPath: m_Name
       value: UI
@@ -693,6 +705,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7692386266506069210, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692386266506069210, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 492294312700710392, guid: bfaa1f5bb5035ea46aaaee767cd7a990, type: 3}
+    - target: {fileID: 7692386266506069210, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.19188325
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692386266506069210, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.19188325
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692386266506069210, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8301887
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7251225802073906567, guid: cf9c1175b89161d41b712377ad23ed3c, type: 3}
@@ -1325,10 +1357,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 124009588}
-    - target: {fileID: 3478808022038544922, guid: 313334b32210337409c711f2ac6448ee, type: 3}
-      propertyPath: gameStartButton
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5702833006520737450, guid: 313334b32210337409c711f2ac6448ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1

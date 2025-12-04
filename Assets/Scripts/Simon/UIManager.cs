@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,13 +10,6 @@ public class UIManager : MonoBehaviour
     //[SerializeField] TextMeshProUGUI healthText;
     [SerializeField] CastleHealth castleHealth;
 
-    [Header ("Buttons")]
-    //[SerializeField] GameObject startGameButton;
-    [SerializeField] GameObject gameOverButton;
-
-    [Header ("Game stopper")]
-    [SerializeField] StopGame stopGame;
-
     public Slider healthBar;
 
 
@@ -24,7 +18,7 @@ public class UIManager : MonoBehaviour
         //startGameButton.SetActive(true);
         
     }
-    
+
     public void UpdateHealthText()
     {
         //healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
@@ -32,8 +26,7 @@ public class UIManager : MonoBehaviour
     
     public void GameOver()
     {
-        gameOverButton.SetActive(true);
-        stopGame.DisableGame();
+        SceneManager.LoadScene(2);
     }
 
     public void Update()

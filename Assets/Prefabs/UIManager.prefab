@@ -67,7 +67,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   healthBar: {fileID: 0}
-  gameStartButton: {fileID: 0}
 --- !u!114 &8749952920804339742
 MonoBehaviour:
   m_ObjectHideFlags: 0
