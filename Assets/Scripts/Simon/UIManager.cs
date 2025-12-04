@@ -7,11 +7,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject player;
 
     [Header ("Health bar")]
-    [SerializeField] TextMeshProUGUI healthText;
+    //[SerializeField] TextMeshProUGUI healthText;
     [SerializeField] CastleHealth castleHealth;
 
     [Header ("Buttons")]
-    [SerializeField] GameObject startGameButton;
+    //[SerializeField] GameObject startGameButton;
     [SerializeField] GameObject gameOverButton;
 
     [Header ("Game stopper")]
@@ -22,13 +22,13 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        startGameButton.SetActive(true);
+        //startGameButton.SetActive(true);
         
     }
     
     public void UpdateHealthText()
     {
-        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+        //healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
     
     public void GameOver()
@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     {
         healthBar.value = castleHealth.currentHealth;
         healthBar.maxValue = castleHealth.maxHealth;
-        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+        //healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
 
     }
 }
