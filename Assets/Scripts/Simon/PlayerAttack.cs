@@ -10,6 +10,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] LayerMask meteor;
     [SerializeField] float meterCheckRadius;
     private Collider2D meteorCollider;
+    public GameObject attackHitBox;
+    public GameObject hitBoxSpawnPoint;
 
     private ScoreManager scoreManager;
 
@@ -26,11 +28,8 @@ public class PlayerAttack : MonoBehaviour
 
     void OnAttack()
     {
-        if (meteorCollider != null)
-        {
-            meteorScript.BounceAway();
-            scoreManager.AddScore();
-        }
+        GameObject Hitbox = Instantiate(attackHitBox, hitBoxSpawnPoint.transform.position, Quaternion.identity);
+        Destroy(Hitbox, 0.2f);
     }
     
     void CheckMeteor()

@@ -1,44 +1,40 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] GameObject player;
 
     [Header ("Health bar")]
-    [SerializeField] TextMeshProUGUI healthText;
+    //[SerializeField] TextMeshProUGUI healthText;
     [SerializeField] CastleHealth castleHealth;
-
-    [Header ("Buttons")]
-    [SerializeField] GameObject startGameButton;
-    [SerializeField] GameObject gameOverButton;
-
-    [Header ("Game stopper")]
-    [SerializeField] StopGame stopGame;
 
     public Slider healthBar;
 
+
     void Start()
     {
-        startGameButton.SetActive(true);
-        healthBar.maxValue = castleHealth.maxHealth;
+        //startGameButton.SetActive(true);
+        
     }
-    
-    public void Update()
-    {
-        healthBar.value = castleHealth.currentHealth;
-        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
-    }
-    
+
     public void UpdateHealthText()
     {
-        healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+        //healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
     
     public void GameOver()
     {
-        gameOverButton.SetActive(true);
-        stopGame.DisableGame();
+        SceneManager.LoadScene(2);
+    }
+
+    public void Update()
+
+    {
+        healthBar.value = castleHealth.currentHealth;
+        healthBar.maxValue = castleHealth.maxHealth;
+        //healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
+
     }
 }

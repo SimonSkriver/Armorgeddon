@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Meteor
   - Ground
+  - Hitbox
+  - Platform
   layers:
   - Default
   - TransparentFX

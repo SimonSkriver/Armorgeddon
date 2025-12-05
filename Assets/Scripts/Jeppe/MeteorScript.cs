@@ -1,15 +1,20 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MeteorScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed = 5f;
     public int hitForce;
+    private ScoreManager scoreManager;
+    public AudioSource hitSound;
 
     void Start()
     {
         // Dette henter Rigidbody og transform komponenterne
         rb = GetComponent<Rigidbody2D>();
+        scoreManager = FindAnyObjectByType<ScoreManager>();
+
 
         // Hvis positionen er over 0 på x-aksen, bevæger den mod venstre, ellers bevæger den mod højre
         if (transform.position.x > 0)
@@ -27,17 +32,24 @@ public class MeteorScript : MonoBehaviour
         }
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Hitbox"))
+        { 
+            BounceAway();
+            scoreManager.AddScore();
+            hitSound.Play();
+        }
+        
+    }
+
+
     // Metode til at smide meteoren opad
     public void BounceAway()
     {       
         rb.linearVelocity = new Vector2(rb.linearVelocityX, hitForce);       
     }
     
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Ground"))
-        {
-            Destroy(gameObject);
-        }
-    }
+    
+    
 }
