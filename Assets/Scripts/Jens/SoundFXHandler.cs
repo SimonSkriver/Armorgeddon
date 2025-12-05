@@ -2,15 +2,29 @@ using UnityEngine;
 
 public class SoundFXHandler : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static SoundFXHandler Instance;
+
+    [Header("Audio Sources")]
+    public AudioSource sfxSource;
+
+    [Header("Sound Effects")]
+    public AudioClip jumpSFX;
+    public AudioClip swingSFX;
+    public AudioClip hitSFX;
+    public AudioClip impactSFX;
+
+    void Awake()
     {
-        
+        // Make sure only one instance exists
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlaySFX(AudioClip clip)
     {
-        
+        if (clip == null) return;
+        sfxSource.PlayOneShot(clip);
     }
 }
