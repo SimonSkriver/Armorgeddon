@@ -23,11 +23,13 @@ public class AnimationHandler : MonoBehaviour
     void OnMove() //calling move method to trigger running animation, by switching bool
     {
         animator.SetBool("Running", true);
+        SimpleAudio.Instance.Play("Footsteps");
     }
 
     void OnAttack()
     {
         animator.SetTrigger("Attack");
+        SimpleAudio.Instance.Play("Swing");
     }
     void FlipCharacter() //method in which we flip the character according to movement direction. Using rotation, to avoid issues with scaling, physics and the animation rig and stuff
     {

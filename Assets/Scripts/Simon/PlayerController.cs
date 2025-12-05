@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce); // Updates the Y velocity
             //jumpSound.Play();
+            SimpleAudio.Instance.Play("Leap");
         }
     }
 

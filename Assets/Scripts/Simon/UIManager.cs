@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene(2);
+        SimpleAudio.Instance.Play("Doomed");
     }
 
     public void Update()

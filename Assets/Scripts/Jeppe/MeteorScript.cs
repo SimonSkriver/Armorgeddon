@@ -7,7 +7,7 @@ public class MeteorScript : MonoBehaviour
     public float speed = 5f;
     public int hitForce;
     private ScoreManager scoreManager;
-    public AudioSource hitSound;
+    
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class MeteorScript : MonoBehaviour
         { 
             BounceAway();
             scoreManager.AddScore();
-            hitSound.Play();
+            SimpleAudio.Instance.Play("Hit");
         }
         
     }
