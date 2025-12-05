@@ -1,22 +1,26 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Components")]
-    public Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
 
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
+    [SerializeField] float invinsibilityTime = 0.3f;
     private Vector2 moveInput;
 
-    [Header("Ground check settings")]
+    [Header("Ground and platform check settings")]
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask platformLayer;
     [SerializeField] Vector2 groundCeckSize;
-
+    
     private bool isGrounded;
+    private Collider2D platform;
 
     void Update()
     {
@@ -26,8 +30,7 @@ public class PlayerController : MonoBehaviour
 
     void OnJump() // Is called when you press space
     {
-        Debug.Log("Jump called");
-        if (isGrounded) // Make sure you can only jump, when you're grounded
+        if (isGrounded || platform != null) // Make sure you can only jump, when you're grounded or on a platform
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce); // Updates the Y velocity
         }
@@ -39,9 +42,25 @@ public class PlayerController : MonoBehaviour
         moveInput = value.Get<Vector2>(); // This value is constantly read in update and used to update the X velocity
     }
 
+    void OnDescent()
+    {
+        if (platform != null)
+        {
+            StartCoroutine(TemporarilyDisbleCollider(platform));
+        }
+    }
+
+    IEnumerator TemporarilyDisbleCollider(Collider2D platformCollider)
+    {
+        platformCollider.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+        platformCollider.enabled = true;
+    }
+
     void CheckGrounded()
     {
         isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, groundLayer); //This function is called from update, which means that the bool "isGrounded" constantly gets updated. The bool turns true, when the OverlapBox hits the Ground layer
+        platform = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, platformLayer); //Returns the collider of the platform, if within reach
     }
 
     void OnDrawGizmosSelected() // For debugging purposes. Draws an outline around the groundCheck box

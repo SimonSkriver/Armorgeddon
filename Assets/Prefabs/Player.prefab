@@ -211,12 +211,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6854960404185837321}
+  playerCollider: {fileID: 8384163570523517469}
   moveSpeed: 10
   jumpForce: 15
   groundCheck: {fileID: 8641023621146947616}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  platformLayer:
+    serializedVersion: 2
+    m_Bits: 256
   groundCeckSize: {x: 1.28, y: 0.1}
 --- !u!114 &4039088231831557726
 MonoBehaviour:
@@ -230,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ece0ed93f802ae4ea46c7d43dbb5c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteorScript: {fileID: 0}
+  meteorScript: {fileID: 5377986694602972211, guid: 88b831237242aa44ea5dc169a6ebb73f, type: 3}
   meteorCheck: {fileID: 278871459732882206}
   meteor:
     serializedVersion: 2
@@ -248,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 4f600cd1a1468fd488c7beea3d8f98d4, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
