@@ -9,8 +9,8 @@ public class SimpleAudio : MonoBehaviour
     [System.Serializable]
     public class SoundItem
     {
-        public string name;      // Type the name manually!
-        public AudioClip clip;   // Drag the sound here
+        public string name;      // Type the name of the sound here
+        public AudioClip clip;   // Drag the sound file here
         
         [Range(0f, 1f)] 
         public float volume = 1f;
@@ -19,7 +19,7 @@ public class SimpleAudio : MonoBehaviour
         public float pitch = 1f;
     }
 
-    // The list you fill in the Inspector
+    // The list you fill in the Inspector window
     public SoundItem[] soundList;
 
     private AudioSource source;
@@ -38,13 +38,13 @@ public class SimpleAudio : MonoBehaviour
             return;
         }
 
-        // Add the audio source
+        // Add the audio source component when the game starts boi
         source = gameObject.AddComponent<AudioSource>();
     }
 
     public void Play(string soundName)
     {
-        // Find sound by name
+        // Find sound by name boi
         SoundItem s = Array.Find(soundList, item => item.name == soundName);
 
         if (s == null)
@@ -53,7 +53,7 @@ public class SimpleAudio : MonoBehaviour
             return;
         }
 
-        // Play it
+        // Play that sound boi
         source.volume = s.volume;
         source.pitch = s.pitch;
         source.PlayOneShot(s.clip);
