@@ -1969,7 +1969,7 @@ MonoBehaviour:
   meteor:
     serializedVersion: 2
     m_Bits: 128
-  meterCheckRadius: 1.61
+  meterCheckRadius: 1.65
   attackHitBox: {fileID: 5460117762308635997, guid: 1606365f7707d524a81d1dc3cc602050, type: 3}
   hitBoxSpawnPoint: {fileID: 4545786160452100287}
 --- !u!114 &1765211320814712209
