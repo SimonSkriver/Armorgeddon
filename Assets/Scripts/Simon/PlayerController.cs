@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 groundCeckSize;
     
     public bool isGrounded;
-    private Collider2D platform;
+    public Collider2D platform;
 
     //Alt herunder er lyd
     //public AudioSource jumpSound;
