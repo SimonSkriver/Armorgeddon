@@ -23,11 +23,6 @@ public class UIManager : MonoBehaviour
     {
         //healthText.text = "Castle health: " + castleHealth.currentHealth.ToString();
     }
-    
-    public void GameOver()
-    {
-        SceneManager.LoadScene(2);
-    }
 
     public void Update()
 
