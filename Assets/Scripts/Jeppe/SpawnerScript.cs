@@ -3,7 +3,7 @@ using UnityEngine;
 public class SpawnerScript : MonoBehaviour
 {
     public GameObject prefab;
-    public float spawnTime = 0;
+    private float spawnTime = 0;
     public float spawnRate = 5.0f;
     public GameObject[] spawnPoints;
 
