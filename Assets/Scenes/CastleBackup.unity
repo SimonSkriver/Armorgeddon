@@ -829,26 +829,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 316407435014386010, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0000008344649
-      objectReference: {fileID: 0}
-    - target: {fileID: 1565802645049219431, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: jumpForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743222958682533348, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.2777928
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743222958682533348, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.960641
-      objectReference: {fileID: 0}
-    - target: {fileID: 7491591772484974828, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000064224005
-      objectReference: {fileID: 0}
     - target: {fileID: 7666377942473149609, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27701
@@ -892,14 +872,6 @@ PrefabInstance:
     - target: {fileID: 8839558684008502474, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
       propertyPath: m_Name
       value: Chud
-      objectReference: {fileID: 0}
-    - target: {fileID: 9048831055199162511, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.27951953
-      objectReference: {fileID: 0}
-    - target: {fileID: 9048831055199162511, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.96014
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

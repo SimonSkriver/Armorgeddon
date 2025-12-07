@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
-    //[SerializeField] float invinsibilityTime = 0.3f;
     public Vector2 moveInput;
 
     [Header("Ground and platform check settings")]
@@ -21,9 +20,6 @@ public class PlayerController : MonoBehaviour
     
     public bool isGrounded;
     public Collider2D platform;
-
-    //Alt herunder er lyd
-    //public AudioSource jumpSound;
 
     void Update()
     {
@@ -36,7 +32,6 @@ public class PlayerController : MonoBehaviour
         if (isGrounded || platform != null) // Make sure you can only jump, when you're grounded or on a platform
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce); // Updates the Y velocity
-            //jumpSound.Play();
         }
     }
 

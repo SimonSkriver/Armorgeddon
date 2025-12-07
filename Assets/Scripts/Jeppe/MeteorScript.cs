@@ -20,7 +20,7 @@ public class MeteorScript : MonoBehaviour
         {
             rb.AddForce(Vector2.left * speed);
         }
-        
+
         else
         {
             rb.AddForce(Vector2.right * speed);
@@ -43,7 +43,7 @@ public class MeteorScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Hitbox"))
+        if (collision.gameObject.CompareTag("Hitbox"))
         { 
             BounceAway();
             scoreManager.AddScore();
