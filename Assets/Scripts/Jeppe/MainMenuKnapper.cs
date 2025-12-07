@@ -38,6 +38,7 @@ public class MainMenuKnapper : MonoBehaviour
     public void GameOver()
     {
         nextScene = 2;
+        SimpleAudio.Instance.Play("Doomed");
         LoadNextScene();
     }
 
