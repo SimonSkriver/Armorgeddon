@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class AnimationHandler : MonoBehaviour
 {
+    //This scripts handles both animations and SFX for the player controller.
+    //It essentially mirrors the Player Controller, but only triggers animation triggers and sound effects upon input
     private Animator animator;
     private PlayerController playerController;
     public AudioSource SwingSound;
-     public AudioSource WalkSound;
+    public AudioSource WalkSound;
     public AudioSource JumpSound;
     
     void Start()
