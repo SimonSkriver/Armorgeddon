@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MeteorScript : MonoBehaviour
 {
@@ -18,9 +17,14 @@ public class MeteorScript : MonoBehaviour
 
         // Hvis positionen er over 0 på x-aksen, bevæger den mod venstre, ellers bevæger den mod højre
         if (transform.position.x > 0)
+        {
             rb.AddForce(Vector2.left * speed);
+        }
+        
         else
-            rb.AddForce(Vector2.right * speed);        
+        {
+            rb.AddForce(Vector2.right * speed);
+        }
     }
 
     public void Update()
@@ -45,16 +49,11 @@ public class MeteorScript : MonoBehaviour
             scoreManager.AddScore();
             hitSound.Play();
         }
-        
     }
-
 
     // Metode til at smide meteoren opad
     public void BounceAway()
     {       
         rb.linearVelocity = new Vector2(rb.linearVelocityX, hitForce);       
     }
-    
-    
-    
 }

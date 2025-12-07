@@ -49,6 +49,5 @@ public class MainMenuKnapper : MonoBehaviour
         transition.SetTrigger("SceneLoad"); //start transition animation
         yield return new WaitForSeconds(transitionDuration); //wait for transition duration, so that anim can play
         SceneManager.LoadScene(nextScene, LoadSceneMode.Single); //load specified scene
-
     }
 }
