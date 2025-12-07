@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuKnapper : MonoBehaviour
+public class SceneHandler : MonoBehaviour
 {
     // Scriptet styrer knapperne i main menuen og game over menuen.
     // Hver script har en metode der loader scenerne.
