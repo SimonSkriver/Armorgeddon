@@ -4,6 +4,9 @@ public class AnimationHandler : MonoBehaviour
 {
     private Animator animator;
     private PlayerController playerController;
+    public AudioSource SwingSound;
+     public AudioSource WalkSound;
+    public AudioSource JumpSound;
     
     void Start()
     {
@@ -17,17 +20,20 @@ public class AnimationHandler : MonoBehaviour
         if (playerController.isGrounded || playerController.platform != null)
         {
         animator.SetTrigger("Jump");
+        JumpSound.Play();
         }
     }
 
     void OnMove() //calling move method to trigger running animation, by switching bool
     {
         animator.SetBool("Running", true);
+        WalkSound.Play();
     }
 
     void OnAttack()
     {
         animator.SetTrigger("Attack");
+        SwingSound.Play();
     }
     void FlipCharacter() //method in which we flip the character according to movement direction, determined by moveInput in playerController. Using rotation, to avoid issues with scaling, physics and the animation rig and stuff
     {
@@ -57,6 +63,7 @@ public class AnimationHandler : MonoBehaviour
         if (playerController.moveInput.x != 0f) return; //if moveInput is anything but 0, we "return" out of the if statement and execute no more code. If it is 0 then we set running to false and thus play the idle
         {
             animator.SetBool("Running", false);
+            WalkSound.Stop();
         }
     }
 }

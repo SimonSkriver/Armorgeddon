@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     
     public bool isGrounded;
     public Collider2D platform;
+    public AudioSource JumpSound;
 
     void Update()
     {
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded || platform != null) // Make sure you can only jump, when you're grounded or on a platform
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce); // Updates the Y velocity
+            JumpSound.Play();
         }
     }
 
