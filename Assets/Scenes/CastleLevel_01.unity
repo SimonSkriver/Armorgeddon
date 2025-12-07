@@ -1930,10 +1930,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7783514412366360814, guid: 19a35af3313df438fb12d5d35f536044, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 95d96d83829844d68aef430ab253a543, type: 3}
     - target: {fileID: 9013732426744703939, guid: 19a35af3313df438fb12d5d35f536044, type: 3}
       propertyPath: m_Name
       value: IngameSoundtrack
