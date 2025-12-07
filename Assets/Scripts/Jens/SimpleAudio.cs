@@ -6,17 +6,17 @@ public class SimpleAudio : MonoBehaviour
     // Singleton - allows you to call it from anywhere
     public static SimpleAudio Instance;
 
-    [System.Serializable]
+    [System.Serializable]   // Makes the class show up in the Inspector window
     public class SoundItem
     {
         public string name;      // Type the name of the sound here
         public AudioClip clip;   // Drag the sound file here
         
         [Range(0f, 1f)] 
-        public float volume = 1f;
+        public float volume = 1f;  // Volume of the sound
         
         [Range(0.1f, 3f)] 
-        public float pitch = 1f;
+        public float pitch = 1f; // Pitch of the sound
     }
 
     // The list you fill in the Inspector window
@@ -47,7 +47,7 @@ public class SimpleAudio : MonoBehaviour
         // Find sound by name boi
         SoundItem s = Array.Find(soundList, item => item.name == soundName);
 
-        if (s == null)
+        if (s == null) // If sound not found boi
         {
             Debug.LogWarning("Audio Missing: " + soundName);
             return;
