@@ -4,10 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuKnapper : MonoBehaviour
 {
+    // Scriptet styrer knapperne i main menuen og game over menuen.
+    // Hver script har en metode der loader scenerne.
+    
     private int nextScene;
     public Animator transition;
     public float transitionDuration; //Overall duration of transition, which is adjustable
     private float fadeAnimDuration = 1f; //duration of keyframed transition anim. NO TOUCHY!!
+    
     public void StartGame()
     {
         nextScene = 1;

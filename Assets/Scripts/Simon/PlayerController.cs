@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value) // This gets called when you click a move button (set in the input action assets)
     {
-        Debug.Log("Move called");
+        //Debug.Log("Move called");
         moveInput = value.Get<Vector2>(); // This value is constantly read in update and used to update the X velocity
     }
 
