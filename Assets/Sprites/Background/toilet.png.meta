@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 06ea1659f9b1a0646a8f0ea43cd8f3fb
+guid: d1bb3b848fc7237459b51b7022115218
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5911979957080389217
-    second: castle_planks_0
+      213: -8243884347342347663
+    second: toilet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: castle_planks_0
+      name: toilet_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 1185
-        width: 3602
-        height: 580
+        x: 2171
+        y: 539
+        width: 513
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 166710da2729b0250800000000000000
-      internalID: 5911979957080389217
+      spriteID: 172a1433dd6d79d80800000000000000
+      internalID: -8243884347342347663
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      castle_planks_0: 5911979957080389217
+      toilet_0: -8243884347342347663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
