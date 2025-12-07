@@ -6,15 +6,20 @@ public class SpawnerScript : MonoBehaviour
     private float spawnTime = 0;
     public float spawnRate = 5.0f;
     public GameObject[] spawnPoints;
+    public float gameTime;
 
+    public static SpawnerScript instance;
     void Start()
     {
+        // Sørger for at spawnTime og gameTime bliver sat til noget og skaber en instance af spawnerscriptet, der kan tilgås fra andre scripts.
         spawnTime = 0;
+        gameTime = 0;
+        instance = this;
     }
 
     void Update()
     {
-        // hvis spawntime >= spawnrate, så køres spawn() metoden, der er længere nede.
+        // hvis spawntime >= spawnrate, så køres spawn() metoden, der er længere nede. Ellers tilføres der tid til timeren.
         if (spawnTime >= spawnRate)
         {
             spawn();
@@ -23,6 +28,7 @@ public class SpawnerScript : MonoBehaviour
         {
             spawnTime += Time.deltaTime;
         }
+        gameTime += Time.deltaTime;
     }
 
     void spawn()

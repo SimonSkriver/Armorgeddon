@@ -4,29 +4,37 @@ using UnityEngine.SceneManagement;
 public class MeteorScript : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float speed = 5f;
+    public float speed = 5f;    
+    public int minCurve = 0;
+    public int maxCurve = 100;
+
     public int hitForce;
+
+    // Her går vi ind og finder ScoreManager scriptet, så vi kan tilføje point når meteoren bliver ramt.
     private ScoreManager scoreManager;
     public AudioSource hitSound;
 
     void Start()
     {
-        // Dette henter Rigidbody og transform komponenterne
+        // Dette henter Rigidbody, så vi kan styre meteoren. Vi finder også scoreManager scriptet i scenen, så vi kan tilføre score længere nede.
         rb = GetComponent<Rigidbody2D>();
         scoreManager = FindAnyObjectByType<ScoreManager>();
 
+        // Hvis positionen er over 0 på x-aksen, bevæger den mod venstre, vice versa. Speed bliver også udregnet random lige over
+        speed = Random.Range(minCurve, maxCurve);
 
-        // Hvis positionen er over 0 på x-aksen, bevæger den mod venstre, ellers bevæger den mod højre
         if (transform.position.x > 0)
             rb.AddForce(Vector2.left * speed);
         else
             rb.AddForce(Vector2.right * speed);        
+
+        
     }
 
     public void Update()
     {        
-        // Hvis y positionen er over 20, så dør meteoren
-        if(transform.position.y > 20)
+        // Hvis y positionen er over 40, så dør meteoren
+        if(transform.position.y > 40)
         {
             Destroy(gameObject);
         }
@@ -39,6 +47,7 @@ public class MeteorScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        // Scriptet tjekker om meteoren rammer et Gameobject med tagget "Hitbox". Hvis ja, kaldes BounceAway, addscore og spiller en lyd.
         if(collision.gameObject.CompareTag("Hitbox"))
         { 
             BounceAway();
@@ -49,12 +58,9 @@ public class MeteorScript : MonoBehaviour
     }
 
 
-    // Metode til at smide meteoren opad
+    // Metode til at smide meteoren opad. Tilfører en meget stor kraft opad på y-aksen.
     public void BounceAway()
     {       
         rb.linearVelocity = new Vector2(rb.linearVelocityX, hitForce);       
     }
-    
-    
-    
 }
