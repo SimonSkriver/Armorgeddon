@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 groundCeckSize;
     
     public bool isGrounded;
+    public AudioSource JumpSound;
+   
     private Collider2D platform;
 
     //Alt herunder er lyd
@@ -36,8 +38,8 @@ public class PlayerController : MonoBehaviour
         if (isGrounded || platform != null) // Make sure you can only jump, when you're grounded or on a platform
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce); // Updates the Y velocity
-            //jumpSound.Play();
-            SimpleAudio.Instance.Play("Leap");
+            JumpSound.Play();
+            //SimpleAudio.Instance.Play("Leap");
         }
     }
 
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Move called");
         moveInput = value.Get<Vector2>(); // This value is constantly read in update and used to update the X velocity
+       
     }
 
     void OnDescent()
