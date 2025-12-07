@@ -194,9 +194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25c5b5ad5f792f49bd4bd9ebf1069ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 250
   hitForce: 100
   hitSound: {fileID: 1845350558482517426}
+  minCurve: 50
+  maxCurve: 250
 --- !u!50 &8498308754199090135
 Rigidbody2D:
   serializedVersion: 5
