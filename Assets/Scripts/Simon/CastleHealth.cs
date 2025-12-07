@@ -5,7 +5,7 @@ public class CastleHealth : MonoBehaviour
     [Header ("Castle health settings")]
     public int currentHealth;
     public int maxHealth = 10;
-    public UIManager ui;
+    public MainMenuKnapper ui;
 
     void Start()
     {
