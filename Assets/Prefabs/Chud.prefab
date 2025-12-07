@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5834645034705747479}
   moveSpeed: 10
-  jumpForce: 15
+  jumpForce: 20
   moveInput: {x: 0, y: 0}
   groundCheck: {fileID: 7180440136069139102}
   groundLayer:
@@ -1953,6 +1953,7 @@ MonoBehaviour:
     m_Bits: 256
   groundCeckSize: {x: 0.9, y: 0.1}
   isGrounded: 0
+  platform: {fileID: 0}
 --- !u!114 &4070624231343215477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1965,13 +1966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ece0ed93f802ae4ea46c7d43dbb5c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteorCheck: {fileID: 2962818113652276199}
-  meteor:
-    serializedVersion: 2
-    m_Bits: 128
-  meterCheckRadius: 1.65
   attackHitBox: {fileID: 5460117762308635997, guid: 1606365f7707d524a81d1dc3cc602050, type: 3}
-  hitBoxSpawnPoint: {fileID: 4545786160452100287}
 --- !u!114 &1765211320814712209
 MonoBehaviour:
   m_ObjectHideFlags: 0

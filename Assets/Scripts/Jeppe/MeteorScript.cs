@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MeteorScript : MonoBehaviour
 {
@@ -24,11 +23,14 @@ public class MeteorScript : MonoBehaviour
         speed = Random.Range(minCurve, maxCurve);
 
         if (transform.position.x > 0)
+        {
             rb.AddForce(Vector2.left * speed);
-        else
-            rb.AddForce(Vector2.right * speed);        
+        }
 
-        
+        else
+        {
+            rb.AddForce(Vector2.right * speed);
+        }
     }
 
     public void Update()
@@ -54,7 +56,6 @@ public class MeteorScript : MonoBehaviour
             scoreManager.AddScore();
             hitSound.Play();
         }
-        
     }
 
 
