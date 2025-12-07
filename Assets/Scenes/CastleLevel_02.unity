@@ -832,6 +832,10 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4070624231343215477, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
+      propertyPath: hitBoxSpawnPoint
+      value: 
+      objectReference: {fileID: 1919410071}
     - target: {fileID: 7666377942473149609, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27701
@@ -1226,7 +1230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 10
-  ui: {fileID: 1800675256}
+  sceneLoader: {fileID: 0}
 --- !u!1001 &1546175410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1409,17 +1413,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee906b646588ff6418dd41d30351e020, type: 3}
---- !u!114 &1800675256 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 523169312883341784, guid: 313334b32210337409c711f2ac6448ee, type: 3}
-  m_PrefabInstance: {fileID: 1546175410}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7091ad7f842a93d49be38f32d787ee7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1817405923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1716,6 +1709,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!1 &1919410071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4545786160452100287, guid: 71b365c54b95a1140aee9d9ea1048e05, type: 3}
+  m_PrefabInstance: {fileID: 1117979379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2049064377
 PrefabInstance:
   m_ObjectHideFlags: 0

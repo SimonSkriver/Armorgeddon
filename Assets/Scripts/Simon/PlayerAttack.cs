@@ -5,7 +5,7 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header ("Meteor check settings")]
     public GameObject attackHitBox;
-    private GameObject hitBoxSpawnPoint;
+    public GameObject hitBoxSpawnPoint;
 
     void OnAttack()
     {
