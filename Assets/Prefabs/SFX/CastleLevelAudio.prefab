@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3617607864840360406}
   - component: {fileID: 7783514412366360814}
   m_Layer: 0
-  m_Name: IngameSoundtrack
+  m_Name: CastleLevelAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
