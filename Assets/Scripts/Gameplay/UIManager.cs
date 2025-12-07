@@ -7,9 +7,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] CastleHealth castleHealth;
     [SerializeField] Slider healthBar;
 
-    public void Update()
+    void Start()
+    {
+        healthBar.maxValue = castleHealth.maxHealth; // Sets the max value of the slider at game start to be equal to the castle's max health
+    }
+
+    public void Update() // Constantly updates the slider to be equal to the castle's current health
     {
         healthBar.value = castleHealth.currentHealth;
-        healthBar.maxValue = castleHealth.maxHealth;
     }
 }

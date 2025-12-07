@@ -9,15 +9,14 @@ public class CastleHealth : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-
+        currentHealth = maxHealth; // Current health is set to max health initially
     }
 
     void Update()
     {
         if (currentHealth <= 0)
         {
-            sceneLoader.GameOver();
+            sceneLoader.GameOver(); // Constantly checking, if castle health is equal to, or less than zero. If so, it runs the GameOver method from sceneLoader
         }
     }
 
@@ -26,7 +25,7 @@ public class CastleHealth : MonoBehaviour
         if (meteor.CompareTag("Meteor"))
         {
             currentHealth--;
-            Destroy(meteor.gameObject); 
+            Destroy(meteor.gameObject); // When a meteor enters the ground's trigger zone, it decrements the health, and destroys the GameObject attached to the meteor tag
         }
     }
 }
