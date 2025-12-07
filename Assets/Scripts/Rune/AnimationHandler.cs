@@ -7,14 +7,14 @@ public class AnimationHandler : MonoBehaviour
     
     void Start()
     {
-        //Here we get a reference to both our animator, playerController, so that we can update the animation controller parameters according to the players current state
+        //Here we get a reference to both our animator, playerController and attack, so that we can update the animation controller parameters according to the players current state
         animator = GetComponent<Animator>();
         playerController = GetComponent<PlayerController>();
     }
 
    void OnJump() //calling the jump method to trigger jump animation, with an if statement making sure we're grounded and actually able to jump
     {
-        if (playerController.isGrounded || playerController.platform != null)
+        if (playerController.isGrounded)
         {
         animator.SetTrigger("Jump");
         }
@@ -23,13 +23,15 @@ public class AnimationHandler : MonoBehaviour
     void OnMove() //calling move method to trigger running animation, by switching bool
     {
         animator.SetBool("Running", true);
+        SimpleAudio.Instance.Play("Footsteps");
     }
 
     void OnAttack()
     {
         animator.SetTrigger("Attack");
+        SimpleAudio.Instance.Play("Swing");
     }
-    void FlipCharacter() //method in which we flip the character according to movement direction, determined by moveInput in playerController. Using rotation, to avoid issues with scaling, physics and the animation rig and stuff
+    void FlipCharacter() //method in which we flip the character according to movement direction. Using rotation, to avoid issues with scaling, physics and the animation rig and stuff
     {
         if (playerController.moveInput.x < 0)
         {
@@ -45,7 +47,7 @@ public class AnimationHandler : MonoBehaviour
     {
         FlipCharacter(); //calling the flip function
         
-        if (playerController.isGrounded || playerController.platform != null) // else/if switching the Grounded parameter in the animator according to the grounded bool in the playerController
+        if (playerController.isGrounded) // else/if switching the Grounded parameter in the animator according to the grounded bool in the playerController
         {
             animator.SetBool("Grounded", true);
         }

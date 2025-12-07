@@ -6,7 +6,7 @@ public class MeteorScript : MonoBehaviour
     public float speed = 5f;
     public int hitForce;
     private ScoreManager scoreManager;
-    public AudioSource hitSound;
+    
 
     void Start()
     {
@@ -34,11 +34,6 @@ public class MeteorScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        //Roterer meteoren i dens movement direction:
-        Vector2 movementDirection = rb.linearVelocity; //vi finder retningen af meteorer ved at kigge på vores rigid body component og dens linear velocity
-        float rotation = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg + 90f; //Her definerer vi rotationen i radianer udfra x og y movement vectorene. +90 fordi meteoren ellers ville pege til siden...
-        transform.rotation = Quaternion.Euler(0f, 0f, rotation); //og her opdaterer vi rotationen på objektet baseret på ovenstaaende
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -47,7 +42,7 @@ public class MeteorScript : MonoBehaviour
         { 
             BounceAway();
             scoreManager.AddScore();
-            hitSound.Play();
+            SimpleAudio.Instance.Play("Hit");
         }
     }
 

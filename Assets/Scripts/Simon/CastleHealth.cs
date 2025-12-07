@@ -5,7 +5,7 @@ public class CastleHealth : MonoBehaviour
     [Header ("Castle health settings")]
     public int currentHealth;
     public int maxHealth = 10;
-    public MainMenuKnapper sceneLoader;
+    public UIManager ui;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class CastleHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            sceneLoader.GameOver();
+            ui.GameOver();
         }
     }
 
@@ -27,7 +27,8 @@ public class CastleHealth : MonoBehaviour
         {
             currentHealth--;
             //ui.UpdateHealthText();
-            Destroy(meteor.gameObject); 
+            Destroy(meteor.gameObject);
+            SimpleAudio.Instance.Play("Impact");
         }
     }
 }
