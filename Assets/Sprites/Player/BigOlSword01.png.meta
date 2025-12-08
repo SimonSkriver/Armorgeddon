@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa31fb158ba5a904d837acb9aa70889a
+guid: c2f176d6c2657e14fa371331b949a277
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8044525282140488616
-    second: BigOlSword01_0
+      213: -7209599728253047898
+    second: BigOlSword1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigOlSword01_0
+      name: BigOlSword1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 371
         y: 0
-        width: 1142
-        height: 1049
+        width: 1178
+        height: 1080
       alignment: 9
-      pivot: {x: 0.9224918, y: 0.0848406}
+      pivot: {x: 0.9509551, y: 0.0646931}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a302a45f15e3af60800000000000000
-      internalID: 8044525282140488616
+      spriteID: 6ab69b8ce3b52fb90800000000000000
+      internalID: -7209599728253047898
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2ad9ca154863cce43ac41424efcee8b1
+    spriteID: e319a54a355e9d14aa9cb07131297b90
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BigOlSword01_0: 8044525282140488616
+      BigOlSword1_0: -7209599728253047898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
