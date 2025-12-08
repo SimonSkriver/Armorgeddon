@@ -309,9 +309,17 @@ PrefabInstance:
       value: ScreamSound
       objectReference: {fileID: 0}
     - target: {fileID: 7143887355174618496, guid: ca88cf575d9b24b5c9eda58ae2e5500d, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143887355174618496, guid: ca88cf575d9b24b5c9eda58ae2e5500d, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 46f073e8963844cf0a641914364e709f, type: 3}
+    - target: {fileID: 7143887355174618496, guid: ca88cf575d9b24b5c9eda58ae2e5500d, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
