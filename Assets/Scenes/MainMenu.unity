@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2618522086565610453, guid: b2d52b6c2839a44d5bc826901373f2ed, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3827383889084719763, guid: b2d52b6c2839a44d5bc826901373f2ed, type: 3}
       propertyPath: m_Name
       value: HomeAudio

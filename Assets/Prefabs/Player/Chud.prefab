@@ -246,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 4545786160452100287}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.23, y: 1.39, z: -0.0069030346}
+  m_LocalPosition: {x: -0.1, y: 1.05, z: -0.0069030346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1916,7 +1916,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 8
   m_Material: {fileID: 6200000, guid: 5aaff905287e97443b2a82fb7c1045ba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1941,8 +1941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5834645034705747479}
-  moveSpeed: 10
-  jumpForce: 20
+  moveSpeed: 15
+  jumpForce: 25
   moveInput: {x: 0, y: 0}
   groundCheck: {fileID: 7180440136069139102}
   groundLayer:
@@ -1967,7 +1967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackHitBox: {fileID: 5460117762308635997, guid: 1606365f7707d524a81d1dc3cc602050, type: 3}
-  hitBoxSpawnPoint: {fileID: 0}
+  hitBoxSpawnPoint: {fileID: 4545786160452100287}
 --- !u!114 &1765211320814712209
 MonoBehaviour:
   m_ObjectHideFlags: 0
