@@ -491,10 +491,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 250
+  minCurve: 150
+  maxCurve: 300
   hitForce: 100
   hitSound: {fileID: 1845350558482517426}
-  minCurve: 50
-  maxCurve: 250
 --- !u!50 &8498308754199090135
 Rigidbody2D:
   serializedVersion: 5
