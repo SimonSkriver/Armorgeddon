@@ -112,8 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275728138d2324a4fa39f7baac5d1ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 53035083441110162, guid: 88b831237242aa44ea5dc169a6ebb73f, type: 3}
-  spawnTime: 0
+  prefab: {fileID: 7931488801037113981, guid: 88b831237242aa44ea5dc169a6ebb73f, type: 3}
   spawnRate: 2
   spawnPoints:
   - {fileID: 4858705759283126919}
@@ -122,6 +121,7 @@ MonoBehaviour:
   - {fileID: 7237684169123626020}
   - {fileID: 707151144042587898}
   - {fileID: 811924291292767219}
+  gameTime: 0
 --- !u!1 &4718316753709622692
 GameObject:
   m_ObjectHideFlags: 0

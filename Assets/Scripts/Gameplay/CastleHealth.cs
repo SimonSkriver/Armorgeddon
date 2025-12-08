@@ -6,6 +6,7 @@ public class CastleHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth = 10;
     public SceneHandler sceneLoader;
+    public AudioSource ImpactSound;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class CastleHealth : MonoBehaviour
         {
             currentHealth--;
             Destroy(meteor.gameObject); 
+            ImpactSound.Play();
         }
     }
 }

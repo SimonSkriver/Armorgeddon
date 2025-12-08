@@ -1,4 +1,5 @@
 using System.Collections;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -38,7 +39,6 @@ public class SceneHandler : MonoBehaviour
     public void GameOver()
     {
         nextScene = 2;
-        SimpleAudio.Instance.Play("Doomed");
         LoadNextScene();
     }
 

@@ -11,7 +11,7 @@ public class SpawnerScript : MonoBehaviour
     public static SpawnerScript instance;
     void Start()
     {
-        // Sørger for at spawnTime og gameTime bliver sat til noget og skaber en instance af spawnerscriptet, der kan tilgås fra andre scripts.
+        // Soerger for at spawnTime og gameTime bliver sat til noget og skaber en instance af spawnerscriptet, der kan tilgï¿½s fra andre scripts.
         spawnTime = 0;
         gameTime = 0;
         instance = this;
@@ -19,10 +19,10 @@ public class SpawnerScript : MonoBehaviour
 
     void Update()
     {
-        // hvis spawntime >= spawnrate, så køres spawn() metoden, der er længere nede. Ellers tilføres der tid til timeren.
+        // hvis spawntime >= spawnrate, saa koeres spawn() metoden, der er laengere nede. Ellers tilfoeres der tid til timeren.
         if (spawnTime >= spawnRate)
         {
-            spawn();
+            Spawn();
         }
         else
         {
@@ -31,10 +31,10 @@ public class SpawnerScript : MonoBehaviour
         gameTime += Time.deltaTime;
     }
 
-    void spawn()
+    void Spawn()
     {
-        //Her gemmer vi en variable randomSpawnPointIndex, som får en tilfældig værdi mellem 0 længden af spawnPoints arrayet.
-        //Derefter instantierer vi prefab objektet ved den tilfældige spawn point's position og rotation.
+        //Her gemmer vi en variable randomSpawnPointIndex, som faar en tilfaeldig vaerdi mellem 0 laengden af spawnPoints arrayet.
+        //Derefter instantierer vi prefab objektet ved den tilfaeldige spawn point's position og rotation.
         int randomSpawnPointIndex = Random.Range(0, spawnPoints.Length);       
         Instantiate(prefab, spawnPoints[randomSpawnPointIndex].transform.position, spawnPoints[randomSpawnPointIndex].transform.rotation);
         spawnTime = 0;

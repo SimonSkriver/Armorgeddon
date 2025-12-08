@@ -6,7 +6,6 @@ public class MeteorScript : MonoBehaviour
     public float speed = 5f;    
     public int minCurve = 0;
     public int maxCurve = 100;
-
     public int hitForce;
 
     // Her går vi ind og finder ScoreManager scriptet, så vi kan tilføje point når meteoren bliver ramt.
@@ -26,7 +25,6 @@ public class MeteorScript : MonoBehaviour
         {
             rb.AddForce(Vector2.left * speed);
         }
-
         else
         {
             rb.AddForce(Vector2.right * speed);
@@ -40,7 +38,6 @@ public class MeteorScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         //Roterer meteoren i dens movement direction:
         Vector2 movementDirection = rb.linearVelocity; //vi finder retningen af meteorer ved at kigge på vores rigid body component og dens linear velocity
         float rotation = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg + 90f; //Her definerer vi rotationen i radianer udfra x og y movement vectorene. +90 fordi meteoren ellers ville pege til siden...
@@ -57,7 +54,6 @@ public class MeteorScript : MonoBehaviour
             hitSound.Play();
         }
     }
-
 
     // Metode til at smide meteoren opad. Tilfører en meget stor kraft opad på y-aksen.
     public void BounceAway()

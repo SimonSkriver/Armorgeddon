@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         CheckGrounded();
-        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocityY);
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocityY); // Constantly update the player's velocity based on player input (the moveInput value, which is read OnMove)
     }
 
     void OnJump() // Is called when you press space
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         moveInput = value.Get<Vector2>(); // This value is constantly read in update and used to update the X velocity
     }
 
-    void OnDescent()
+    void OnDescent() // When you click the descent button, and you're standing on a platform, it calls the coroutine.
     {
         if (platform != null)
         {
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator TemporarilyDisbleCollider(Collider2D platformCollider)
+    IEnumerator TemporarilyDisbleCollider(Collider2D platformCollider) // This coroutine disables the collider of the platform you're standing on, and re-enables it after 0.3 seconds
     {
         platformCollider.enabled = false;
         yield return new WaitForSeconds(0.3f);
@@ -58,8 +58,8 @@ public class PlayerController : MonoBehaviour
 
     void CheckGrounded()
     {
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, groundLayer); //This function is called from update, which means that the bool "isGrounded" constantly gets updated. The bool turns true, when the OverlapBox hits the Ground layer
-        platform = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, platformLayer); //Returns the collider of the platform, if within reach
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, groundLayer); // This method is called from update, which means that the bool "isGrounded" constantly gets updated. The bool turns true, when the OverlapBox hits the Ground layer
+        platform = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0f, platformLayer); // Returns the collider of the platform, if within reach
     }
 
     void OnDrawGizmosSelected() // For debugging purposes. Draws an outline around the groundCheck box
